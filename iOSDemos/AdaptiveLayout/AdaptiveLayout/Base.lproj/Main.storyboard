@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAB-fD-ww3">
+                                <rect key="frame" x="136.5" y="225" width="47" height="30"/>
+                                <state key="normal" title="iPhone"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpL-6Y-V8S">
+                                <rect key="frame" x="145" y="20" width="30" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.1555721682" blue="0.18501798790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Top"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <color key="backgroundColor" red="0.70995153519999998" green="1" blue="0.54644789130000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                </variation>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMv-xE-AyA">
+                                <rect key="frame" x="369" y="497" width="30" height="30"/>
+                                <state key="normal" title="iPad"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="kpL-6Y-V8S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0xu-Je-YIF"/>
+                            <constraint firstItem="hMv-xE-AyA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FAt-bJ-9yO"/>
+                            <constraint firstItem="kpL-6Y-V8S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HLw-9I-91E"/>
+                            <constraint firstItem="lAB-fD-ww3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QfQ-Db-uJl"/>
+                            <constraint firstItem="lAB-fD-ww3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tQ5-6f-2SR"/>
+                            <constraint firstItem="hMv-xE-AyA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yrA-Aw-6fc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="lAB-fD-ww3"/>
+                                <exclude reference="hMv-xE-AyA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="FAt-bJ-9yO"/>
+                                <exclude reference="yrA-Aw-6fc"/>
+                                <exclude reference="QfQ-Db-uJl"/>
+                                <exclude reference="tQ5-6f-2SR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="lAB-fD-ww3"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="QfQ-Db-uJl"/>
+                                <include reference="tQ5-6f-2SR"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="hMv-xE-AyA"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="FAt-bJ-9yO"/>
+                                <include reference="yrA-Aw-6fc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2l1-Kd-ZbV">
+            <objects>
+                <viewController id="CPr-HK-aLj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Mf-Ne-MW5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWU-OK-IGt">
+                                <rect key="frame" x="16" y="70" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9PC-pa-u9T">
+                                <rect key="frame" x="16" y="120" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2k-1J-7xK">
+                                <rect key="frame" x="145" y="200" width="30" height="30"/>
+                                <state key="normal" title="GO"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uWU-OK-IGt" firstAttribute="top" secondItem="dBd-iZ-vRb" secondAttribute="top" constant="50" id="Cu2-Pl-9Vk"/>
+                            <constraint firstItem="dBd-iZ-vRb" firstAttribute="trailing" secondItem="uWU-OK-IGt" secondAttribute="trailing" constant="16" id="EK0-4R-9TL"/>
+                            <constraint firstItem="dBd-iZ-vRb" firstAttribute="trailing" secondItem="9PC-pa-u9T" secondAttribute="trailing" constant="16" id="RFv-Nt-A86"/>
+                            <constraint firstItem="p2k-1J-7xK" firstAttribute="top" secondItem="9PC-pa-u9T" secondAttribute="bottom" constant="50" id="SUg-Md-wIc"/>
+                            <constraint firstItem="p2k-1J-7xK" firstAttribute="centerX" secondItem="4Mf-Ne-MW5" secondAttribute="centerX" id="See-dc-88j"/>
+                            <constraint firstItem="9PC-pa-u9T" firstAttribute="top" secondItem="uWU-OK-IGt" secondAttribute="bottom" constant="20" id="Z8y-gr-vbx"/>
+                            <constraint firstItem="9PC-pa-u9T" firstAttribute="leading" secondItem="dBd-iZ-vRb" secondAttribute="leading" constant="16" id="mOO-To-TMM"/>
+                            <constraint firstItem="uWU-OK-IGt" firstAttribute="leading" secondItem="dBd-iZ-vRb" secondAttribute="leading" constant="16" id="qPd-hz-tW4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dBd-iZ-vRb"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhR-7x-YQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982.5" y="132.04225352112675"/>
+        </scene>
+    </scenes>
+</document>
