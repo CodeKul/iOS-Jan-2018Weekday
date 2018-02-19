@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,11 +15,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdaptiveLayout" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAB-fD-ww3">
-                                <rect key="frame" x="136.5" y="225" width="47" height="30"/>
+                                <rect key="frame" x="136.5" y="269" width="47" height="30"/>
                                 <state key="normal" title="iPhone"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kpL-6Y-V8S">
@@ -31,6 +31,10 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 </variation>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaP-8i-ylk">
+                                <rect key="frame" x="422" y="270" width="126" height="30"/>
+                                <state key="normal" title="iPhone Landscape"/>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hMv-xE-AyA">
                                 <rect key="frame" x="369" y="497" width="30" height="30"/>
                                 <state key="normal" title="iPad"/>
@@ -39,8 +43,10 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="kpL-6Y-V8S" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0xu-Je-YIF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qaP-8i-ylk" secondAttribute="trailing" constant="20" id="5qV-HP-XYb"/>
                             <constraint firstItem="hMv-xE-AyA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FAt-bJ-9yO"/>
                             <constraint firstItem="kpL-6Y-V8S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HLw-9I-91E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qaP-8i-ylk" secondAttribute="bottom" constant="20" id="M5d-YQ-dVM"/>
                             <constraint firstItem="lAB-fD-ww3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QfQ-Db-uJl"/>
                             <constraint firstItem="lAB-fD-ww3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tQ5-6f-2SR"/>
                             <constraint firstItem="hMv-xE-AyA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yrA-Aw-6fc"/>
@@ -49,13 +55,25 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="lAB-fD-ww3"/>
+                                <exclude reference="qaP-8i-ylk"/>
                                 <exclude reference="hMv-xE-AyA"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="FAt-bJ-9yO"/>
-                                <exclude reference="yrA-Aw-6fc"/>
                                 <exclude reference="QfQ-Db-uJl"/>
                                 <exclude reference="tQ5-6f-2SR"/>
+                                <exclude reference="FAt-bJ-9yO"/>
+                                <exclude reference="yrA-Aw-6fc"/>
+                                <exclude reference="5qV-HP-XYb"/>
+                                <exclude reference="M5d-YQ-dVM"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="subviews">
+                                <include reference="qaP-8i-ylk"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5qV-HP-XYb"/>
+                                <include reference="M5d-YQ-dVM"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -80,13 +98,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="253" y="128"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2l1-Kd-ZbV">
             <objects>
                 <viewController id="CPr-HK-aLj" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Mf-Ne-MW5">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uWU-OK-IGt">

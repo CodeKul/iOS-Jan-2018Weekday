@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutolayoutDemo1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fki-nX-gTA">
@@ -27,11 +27,11 @@
                                 <state key="normal" title="TopRight"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMb-yy-Cn4">
-                                <rect key="frame" x="218" y="430" width="86" height="30"/>
+                                <rect key="frame" x="218" y="518" width="86" height="30"/>
                                 <state key="normal" title="BottomRight"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K7J-Up-NBF">
-                                <rect key="frame" x="16" y="430" width="77" height="30"/>
+                                <rect key="frame" x="16" y="518" width="77" height="30"/>
                                 <state key="normal" title="BottomLeft"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ngp-3Q-wxv">
@@ -39,27 +39,27 @@
                                 <state key="normal" title="Top"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQg-Rw-juG">
-                                <rect key="frame" x="268" y="175" width="36" height="30"/>
+                                <rect key="frame" x="268" y="219" width="36" height="30"/>
                                 <state key="normal" title="Right"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tr3-qm-cwR">
-                                <rect key="frame" x="134.5" y="430" width="51" height="30"/>
+                                <rect key="frame" x="134.5" y="518" width="51" height="30"/>
                                 <state key="normal" title="Bottom"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8li-Kr-eHY">
-                                <rect key="frame" x="16" y="225" width="30" height="30"/>
+                                <rect key="frame" x="16" y="269" width="30" height="30"/>
                                 <state key="normal" title="Left"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HmN-Fe-r7w">
-                                <rect key="frame" x="136.5" y="225" width="47" height="30"/>
+                                <rect key="frame" x="136.5" y="269" width="47" height="30"/>
                                 <state key="normal" title="Center"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2J-qp-6UI">
-                                <rect key="frame" x="114" y="275" width="52" height="30"/>
+                                <rect key="frame" x="114" y="319" width="52" height="30"/>
                                 <state key="normal" title="Button1"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BmK-18-6n5">
-                                <rect key="frame" x="152.5" y="167" width="55" height="30"/>
+                                <rect key="frame" x="152.5" y="211" width="55" height="30"/>
                                 <state key="normal" title="Button2"/>
                             </button>
                         </subviews>
